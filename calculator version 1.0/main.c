@@ -6,7 +6,7 @@
 
 int main()
 {
-    setlocale(LC_ALL, ""); // Set locale for language support
+    setlocale(LC_ALL, ""); // Set locale for language supports
 
     printf("Hello world!\n");
     printf("Program: Choose an option\n");
