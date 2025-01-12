@@ -35,5 +35,5 @@ int main(){
             fp = fopern("strcat")
     }
 
-    return 0;
+    ret;
 }
