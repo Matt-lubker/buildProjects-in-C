@@ -26,40 +26,40 @@ int main(void) {
     quiz_question quiz[TOTAL_QUESTIONS];
 
     // Initialize quiz questions
-    strcpy(quiz[0].question, "What does the ++ operator do?");
-    strcpy(quiz[0].answerA, "Add two to a number");
-    strcpy(quiz[0].answerB, "Add one to a number");
-    strcpy(quiz[0].answerC, "Subtract one from a number");
-    strcpy(quiz[0].answerD, "Subtract two from a number");
-    quiz[0].correct_answer = 'B';
+    strcpy(quiz[0].question, "");
+    strcpy(quiz[0].answerA, "");
+    strcpy(quiz[0].answerB, "");
+    strcpy(quiz[0].answerC, "");
+    strcpy(quiz[0].answerD, "");
+    quiz[0].correct_answer = '';
 
-    strcpy(quiz[1].question, "C is a successor of which language?");
-    strcpy(quiz[1].answerA, "B");
-    strcpy(quiz[1].answerB, "C++");
-    strcpy(quiz[1].answerC, "Python");
-    strcpy(quiz[1].answerD, "Java");
-    quiz[1].correct_answer = 'A';
+    strcpy(quiz[1].question, "");
+    strcpy(quiz[1].answerA, "");
+    strcpy(quiz[1].answerB, "");
+    strcpy(quiz[1].answerC, ");
+    strcpy(quiz[1].answerD, "");
+    quiz[1].correct_answer = '';
 
-    strcpy(quiz[2].question, "When is a do-while loop condition checked?");
-    strcpy(quiz[2].answerA, "Before the loop body executes");
-    strcpy(quiz[2].answerB, "Never");
-    strcpy(quiz[2].answerC, "While the loop body executes");
-    strcpy(quiz[2].answerD, "After the loop body executes");
-    quiz[2].correct_answer = 'D';
+    strcpy(quiz[2].question, "");
+    strcpy(quiz[2].answerA, "B");
+    strcpy(quiz[2].answerB, "N");
+    strcpy(quiz[2].answerC, "");
+    strcpy(quiz[2].answerD, "");
+    quiz[2].correct_answer = '';
 
-    strcpy(quiz[3].question, "What does a pointer variable store?");
-    strcpy(quiz[3].answerA, "A floating-point number");
-    strcpy(quiz[3].answerB, "A string");
-    strcpy(quiz[3].answerC, "A memory address");
-    strcpy(quiz[3].answerD, "An array");
-    quiz[3].correct_answer = 'C';
+    strcpy(quiz[3].question, "");
+    strcpy(quiz[3].answerA, "A");
+    strcpy(quiz[3].answerB, "");
+    strcpy(quiz[3].answerC, "");
+    strcpy(quiz[3].answerD, "");
+    quiz[3].correct_answer = '';
 
-    strcpy(quiz[4].question, "How can we check if x does not equal y in C?");
-    strcpy(quiz[4].answerA, "x <> y");
-    strcpy(quiz[4].answerB, "x != y");
-    strcpy(quiz[4].answerC, "x === y");
-    strcpy(quiz[4].answerD, "x DNE y");
-    quiz[4].correct_answer = 'B';
+    strcpy(quiz[4].question, "");
+    strcpy(quiz[4].answerA, "");
+    strcpy(quiz[4].answerB, "");
+    strcpy(quiz[4].answerC, "x");
+    strcpy(quiz[4].answerD, "");
+    quiz[4].correct_answer = '';
 
     // Variable to store the total number of correct answers
     double total_correct = 0;
