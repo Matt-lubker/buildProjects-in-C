@@ -51,7 +51,7 @@ void calculateAverage() {
 
         if (grade < 0 || grade > 100) {
             printf("Invalid grade. Please enter a grade between 0 and 100.\n");
-            i--; // Retry the current grade
+            i--; 
             continue;
         }
 
@@ -67,7 +67,7 @@ void calculateAverage() {
         printf("Status: Reproved.\n");
     }
 
-    // Option to add an extra grade
+    
     char addGrade;
     printf("\nWould you like to add another grade to update the average? (y/n): ");
     scanf(" %c", &addGrade);
