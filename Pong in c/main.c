@@ -27,18 +27,18 @@ void move_ball(Ball *ball, Paddle *p1, Paddle *p2) {
     ball->x += ball->dx;
     ball->y += ball->dy;
 
-    // Collision with top and bottom
+    
     if (ball->y <= 0 || ball->y >= SCREEN_HEIGHT - BALL_SIZE) {
         ball->dy = -ball->dy;
     }
 
-    // Collision with paddles
+
     if ((ball->x <= p1->x + PADDLE_WIDTH && ball->y + BALL_SIZE >= p1->y && ball->y <= p1->y + PADDLE_HEIGHT) ||
         (ball->x + BALL_SIZE >= p2->x && ball->y + BALL_SIZE >= p2->y && ball->y <= p2->y + PADDLE_HEIGHT)) {
         ball->dx = -ball->dx;
     }
 
-    // Reset if ball goes out
+  
     if (ball->x < 0 || ball->x > SCREEN_WIDTH) {
         ball->x = SCREEN_WIDTH / 2;
         ball->y = SCREEN_HEIGHT / 2;
@@ -67,18 +67,18 @@ int main() {
             }
         }
 
-        // Player 1 controls (W & S)
+        
         const Uint8 *keystate = SDL_GetKeyboardState(NULL);
         if (keystate[SDL_SCANCODE_W]) move_paddle(&p1, -1);
         if (keystate[SDL_SCANCODE_S]) move_paddle(&p1, 1);
 
-        // Player 2 controls (Arrow Up & Down)
+        
         if (keystate[SDL_SCANCODE_UP]) move_paddle(&p2, -1);
         if (keystate[SDL_SCANCODE_DOWN]) move_paddle(&p2, 1);
 
         move_ball(&ball, &p1, &p2);
 
-        // Rendering
+        
         SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
         SDL_RenderClear(renderer);
 
@@ -91,7 +91,7 @@ int main() {
         SDL_RenderFillRect(renderer, &ball_rect);
 
         SDL_RenderPresent(renderer);
-        SDL_Delay(16); // ~60 FPS
+        SDL_Delay(16); 
     }
 
     SDL_DestroyRenderer(renderer);
